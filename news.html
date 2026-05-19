@@ -4,181 +4,193 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>News – Asaba Jumah</title>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<title>Latest News – Asaba Jumah</title>
 
+<meta name="description" content="Latest news, updates and stories from Asaba Jumah official website.">
+
+<link rel="icon" href="/favicon.ico">
+
+<!-- GOOGLE NEWS SCHEMA -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "News – Asaba Jumah",
-  "url": "https://asabajumah.top/news.html"
+  "@context":"https://schema.org",
+  "@type":"NewsMediaOrganization",
+  "name":"Asaba Jumah",
+  "url":"https://www.asabajumah.top",
+  "logo":{
+    "@type":"ImageObject",
+    "url":"https://www.asabajumah.top/favicon.ico"
+  },
+  "sameAs":[
+    "https://www.facebook.com/djfelixpro",
+    "https://x.com/asabajumah",
+    "https://www.instagram.com/djfelixpro",
+    "https://www.tiktok.com/@asabajumah",
+    "https://www.youtube.com/@asabajumah",
+    "https://www.imdb.com/name/nm18243050/",
+    "https://www.themoviedb.org/person/6077619-asaba-jumah"
+  ]
 }
 </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- ARTICLE SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"NewsArticle",
+  "headline":"Asaba Jumah Latest News",
+  "image":"https://www.asabajumah.top/asabajumah.jpg",
+  "datePublished":"2026-05-19",
+  "dateModified":"2026-05-19",
+  "author":{
+    "@type":"Person",
+    "name":"Asaba Jumah"
+  },
+  "publisher":{
+    "@type":"Organization",
+    "name":"Asaba Jumah",
+    "logo":{
+      "@type":"ImageObject",
+      "url":"https://www.asabajumah.top/favicon.ico"
+    }
+  },
+  "mainEntityOfPage":{
+    "@type":"WebPage",
+    "@id":"https://www.asabajumah.top/news.html"
+  }
+}
+</script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-body {
-  margin:0;
-  padding-top:60px;
-  font-family:Arial;
-  background:#020617;
-  color:white;
 
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+body{
+margin:0;
+padding-top:70px;
+font-family:Arial;
+background:#020617;
+color:white;
 }
 
 /* NAVBAR */
-.navbar {
-  position:fixed;
-  top:0;
-  width:100%;
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  padding:15px;
-  background:#020617;
-  border-bottom:1px solid #1e293b;
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:25px;
+padding:15px;
+background:#020617;
+border-bottom:1px solid #1e293b;
+z-index:999;
 }
 
-.navbar a {
-  color:white;
-  text-decoration:none;
+.navbar a{
+color:white;
+text-decoration:none;
 }
 
-.navbar a:hover {
-  color:#38bdf8;
+.navbar a:hover{
+color:#38bdf8;
 }
 
 /* HERO */
-.hero {
-  text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(to bottom,#020617,#0f172a);
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(to bottom,#020617,#0f172a);
 }
 
-.hero img {
-  width:160px;
-  border-radius:50%;
-  margin-bottom:20px;
-  border:3px solid #38bdf8;
+.hero h1{
+font-size:42px;
+margin:0;
 }
 
-/* SECTIONS */
-.container {
-  max-width:1000px;
-  margin:auto;
-  padding:20px;
+.hero p{
+color:#94a3b8;
 }
 
-.section {
-  margin-bottom:40px;
+/* NEWS GRID */
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
 }
 
-.section h2 {
-  border-bottom:2px solid #38bdf8;
-  padding-bottom:10px;
+.news-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
 }
 
-/* BUTTON */
-button.read-more {
-  background:#38bdf8;
-  color:#020617;
-  padding:10px 15px;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;
-  margin-top:10px;
-  font-weight:bold;
-  transition:0.3s;
+.news-card{
+background:#1e293b;
+border-radius:16px;
+overflow:hidden;
+transition:0.3s;
+border:1px solid #1e293b;
 }
 
-button.read-more:hover {
-  opacity:0.85;
-  transform:scale(1.05);
+.news-card:hover{
+transform:translateY(-5px);
+border-color:#38bdf8;
 }
 
-/* CENTER TITLE */
-.center-title {
-  text-align:center;
-  border-bottom:none !important;
+.news-card img{
+width:100%;
+height:220px;
+object-fit:cover;
 }
 
-/* GALLERY */
-.viewport {
-  width:100%;
-  overflow:hidden;
-  padding:20px 0;
+.news-content{
+padding:15px;
 }
 
-.feed {
-  display:flex;
-  width:max-content;
-  animation:scrollLeft 25s linear infinite;
+.news-content h2{
+font-size:22px;
+margin-top:0;
+color:white;
 }
 
-@keyframes scrollLeft {
-  0% {transform:translateX(0);}
-  100% {transform:translateX(-50%);}
+.news-content p{
+color:#cbd5e1;
+line-height:1.6;
 }
 
-.post {
-  min-width:320px;
-  margin:0 10px;
-  border-radius:14px;
-  overflow:hidden;
-  background:#111;
-  flex-shrink:0;
-}
-
-.post img {
-  width:100%;
-  height:260px;
-  object-fit:cover;
-}
-
-.caption {
-  padding:12px;
-  font-weight:bold;
-}
-
-.tag {
-  font-size:12px;
-  color:#ffcc00;
-}
-
-/* PROFILES */
-.social-icons a {
-  display:inline-block;
-  margin:10px;
-  font-size:26px;
-  color:#38bdf8;
+.news-content a{
+display:inline-block;
+margin-top:10px;
+color:#38bdf8;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* FOOTER */
-footer {
-  text-align:center;
-  padding:20px;
-  color:#94a3b8;
+footer{
+margin-top:40px;
+text-align:center;
+padding:30px;
+color:#94a3b8;
+border-top:1px solid #1e293b;
 }
 
-/* PROTECTED MESSAGE */
-#protectedMsg {
-  position:fixed;
-  bottom:20px;
-  left:50%;
-  transform:translateX(-50%);
-  background:red;
-  color:white;
-  padding:10px 18px;
-  border-radius:8px;
-  font-weight:bold;
-  display:none;
-  z-index:9999;
+/* SOCIAL */
+.social-icons a{
+display:inline-block;
+margin:10px;
+font-size:24px;
+color:#38bdf8;
+transition:0.3s;
 }
+
+.social-icons a:hover{
+transform:scale(1.2);
+color:white;
+}
+
 </style>
 </head>
 
@@ -186,87 +198,118 @@ footer {
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="films.html">Films</a>
-  <a href="https://stream.asabajumah.top">Stream</a>
-  <a href="contact.html">Contact</a>
-  <a href="https://help.asabajumah.top">Help</a>
-  <a href="blog.html">Blog</a>
+
+<a href="https://www.asabajumah.top">Home</a>
+
+<a href="https://www.asabajumah.top/films.html">Films</a>
+
+<a href="https://stream.asabajumah.top">Stream</a>
+
+<a href="https://www.asabajumah.top/blog.html">Blog</a>
+
+<a href="https://www.asabajumah.top/news.html">News</a>
+
+<a href="https://www.asabajumah.top/contact.html">Contact</a>
+
+<a href="https://help.asabajumah.top">Help</a>
+
 </div>
 
 <!-- HERO -->
 <div class="hero">
-  <img src="asabajumah.jpg">
-  <h1>Asaba Jumah</h1>
-  <p>Actor, Artist • Ugandan</p>
-</div>
 
-<div class="container">
+<h1>Latest News</h1>
+
+<p>Official updates from Asaba Jumah</p>
+
+</div>
 
 <!-- NEWS -->
-<div class="section">
-  <h2>Latest News</h2>
+<div class="container">
 
-  <div class="news-item">
-    <h3>New Album Coming Soon!</h3>
-    <p>Asaba Jumah will be releasing a new album this summer. Stay tuned for exclusive tracks.</p>
-    <a href="https://www.asabajumah.top/news.html" style="color:#38bdf8;">Read More</a>
-  </div>
+<div class="news-grid">
 
-  <div class="news-item">
-    <h3>Upcoming Concert in Uganda</h3>
-    <p>Join Asaba Jumah for a live performance at the Kampala Arena this December.</p>
-    <a href="https://www.asabajumah.top/news.html" style="color:#38bdf8;">Read More</a>
-  </div>
+<!-- NEWS CARD -->
+<div class="news-card">
 
-  <div class="news-item">
-    <h3>New Music Video Launched</h3>
-    <p>Check out the latest music video "Street Dreams" on YouTube.</p>
-    <a href="https://www.asabajumah.top/news.html" style="color:#38bdf8;">Read More</a>
-  </div>
-</div>
+<img src="https://www.asabajumah.top/Asaba Jumah 2026.jpg">
 
-<!-- PROFILES -->
-<div class="section">
-  <h2>Official Profiles</h2>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/djfelixpro"><i class="fab fa-facebook"></i></a>
-    <a href="https://x.com/asabajumah"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://www.instagram.com/djfelixpro"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@asabajumah"><i class="fab fa-tiktok"></i></a>
-    <a href="https://www.youtube.com/@asabajumah"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.imdb.com/name/nm18243050/"><i class="fab fa-imdb"></i></a>
-    <a href="https://www.themoviedb.org/person/6077619-asaba-jumah"><i class="fas fa-film"></i></a>
-  </div>
-</div>
+<div class="news-content">
+
+<h2>Asaba Jumah Shares 2026 Update</h2>
+
+<p>
+Latest update from actor and artist Asaba Jumah about upcoming projects and appearances.
+</p>
+
+<a href="post.html?id=1">Read More →</a>
 
 </div>
+</div>
 
-<footer>© 2026 Asaba Jumah</footer>
+<!-- NEWS CARD -->
+<div class="news-card">
 
-<!-- PROTECTION SCRIPT -->
-<div id="protectedMsg">Protected 🔒</div>
+<img src="https://www.asabajumah.top/asabajumah.jpg">
 
-<script>
-function showProtected() {
-  let msg = document.getElementById("protectedMsg");
-  msg.style.display = "block";
+<div class="news-content">
 
-  setTimeout(() => {
-    msg.style.display = "none";
-  }, 1500);
-}
+<h2>New Film Projects Announced</h2>
 
-document.addEventListener("copy", function(e) {
-  e.preventDefault();
-  showProtected();
-});
+<p>
+New independent productions and Wakaliwood collaborations are currently in development.
+</p>
 
-document.addEventListener("contextmenu", function(e) {
-  e.preventDefault();
-  showProtected();
-});
-</script>
+<a href="post.html?id=2">Read More →</a>
+
+</div>
+</div>
+
+<!-- NEWS CARD -->
+<div class="news-card">
+
+<img src="https://www.asabajumah.top/Asaba Jumah.png">
+
+<div class="news-content">
+
+<h2>Official Media Gallery Updated</h2>
+
+<p>
+The official gallery now includes latest high-quality photos and behind-the-scenes images.
+</p>
+
+<a href="gallery.html">Open Gallery →</a>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="social-icons">
+
+<a href="https://www.facebook.com/djfelixpro"><i class="fab fa-facebook"></i></a>
+
+<a href="https://x.com/asabajumah"><i class="fab fa-x-twitter"></i></a>
+
+<a href="https://www.instagram.com/djfelixpro"><i class="fab fa-instagram"></i></a>
+
+<a href="https://www.tiktok.com/@asabajumah"><i class="fab fa-tiktok"></i></a>
+
+<a href="https://www.youtube.com/@asabajumah"><i class="fab fa-youtube"></i></a>
+
+<a href="https://www.imdb.com/name/nm18243050/"><i class="fab fa-imdb"></i></a>
+
+<a href="https://www.themoviedb.org/person/6077619-asaba-jumah"><i class="fas fa-film"></i></a>
+
+</div>
+
+<p>© 2026 Asaba Jumah. All rights reserved.</p>
+
+</footer>
 
 </body>
 </html>
