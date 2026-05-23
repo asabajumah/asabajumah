@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Books – Asaba Jumah</title>
+
+<meta name="description"
+content="Official books by Asaba Jumah. Explore novels and stories available online.">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+
+    {
+      "@type":"Person",
+      "name":"Asaba Jumah",
+      "url":"https://www.asabajumah.top",
+      "image":"https://www.asabajumah.top/asabajumah.jpg",
+      "jobTitle":["Author","Actor","Artist"],
+
+      "sameAs":[
+        "https://www.facebook.com/djfelixpro",
+        "https://x.com/asabajumah",
+        "https://www.instagram.com/djfelixpro",
+        "https://www.tiktok.com/@asabajumah",
+        "https://www.youtube.com/@asabajumah",
+        "https://www.imdb.com/name/nm18243050/",
+        "https://www.themoviedb.org/person/6077619-asaba-jumah"
+      ]
+    },
+
+    {
+      "@type":"Book",
+      "name":"The Whispers of Kalenga Forest",
+      "url":"https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html",
+      "image":"https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png",
+      "author":{
+        "@type":"Person",
+        "name":"Asaba Jumah"
+      },
+      "datePublished":"2025-05-10"
+    },
+
+    {
+      "@type":"Book",
+      "name":"The Last Night of Nambale",
+      "url":"https://www.asabajumah.top/books/the-last-light-of-nambale.html",
+      "image":"https://www.asabajumah.top/books/img/the-last-night-of-nambale.png",
+      "author":{
+        "@type":"Person",
+        "name":"Asaba Jumah"
+      },
+      "datePublished":"2025-05-10"
+    }
+
+  ]
+}
+</script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#020617;
+color:white;
+overflow-x:hidden;
+padding-top:70px;
+}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:25px;
+padding:15px;
+background:#020617ee;
+backdrop-filter:blur(10px);
+border-bottom:1px solid #1e293b;
+z-index:999;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px;
+background:
+linear-gradient(to bottom,#020617,#0f172a);
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#38bdf8;
+filter:blur(180px);
+opacity:0.12;
+top:-200px;
+left:-100px;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#8b5cf6;
+filter:blur(180px);
+opacity:0.12;
+bottom:-250px;
+right:-100px;
+}
+
+.hero h1{
+font-size:52px;
+margin:0;
+position:relative;
+z-index:2;
+}
+
+.hero p{
+color:#94a3b8;
+font-size:18px;
+position:relative;
+z-index:2;
+margin-top:15px;
+}
+
+/* CONTAINER */
+.container{
+max-width:1300px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* GRID */
+.books-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+}
+
+/* BOOK CARD */
+.book-card{
+background:#111827;
+border:1px solid #1e293b;
+border-radius:24px;
+overflow:hidden;
+transition:0.4s;
+box-shadow:0 10px 35px rgba(0,0,0,0.35);
+}
+
+.book-card:hover{
+transform:translateY(-8px);
+border-color:#38bdf8;
+}
+
+/* IMAGE */
+.book-image{
+position:relative;
+overflow:hidden;
+}
+
+.book-image img{
+width:100%;
+height:480px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.book-card:hover img{
+transform:scale(1.05);
+}
+
+/* CONTENT */
+.book-content{
+padding:25px;
+}
+
+.book-content h2{
+margin-top:0;
+font-size:30px;
+margin-bottom:15px;
+}
+
+.book-content p{
+color:#cbd5e1;
+line-height:1.7;
+}
+
+/* META */
+.meta{
+margin-top:18px;
+margin-bottom:20px;
+}
+
+.meta span{
+display:inline-block;
+background:#0f172a;
+border:1px solid #38bdf8;
+padding:7px 14px;
+border-radius:50px;
+margin:5px;
+font-size:13px;
+color:#38bdf8;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:14px 24px;
+background:#38bdf8;
+color:#020617;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+opacity:0.9;
+}
+
+/* SOCIAL */
+.social{
+text-align:center;
+margin-top:70px;
+}
+
+.social h2{
+margin-bottom:20px;
+}
+
+.social-icons a{
+display:inline-block;
+margin:10px;
+font-size:28px;
+color:#38bdf8;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:white;
+transform:scale(1.2);
+}
+
+/* FOOTER */
+footer{
+margin-top:60px;
+text-align:center;
+padding:35px;
+border-top:1px solid #1e293b;
+color:#94a3b8;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.book-image img{
+height:420px;
+}
+
+}
+
+/* PROTECTION */
+#protectedMsg{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+background:red;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+font-weight:bold;
+display:none;
+z-index:99999;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<a href="https://www.asabajumah.top">Home</a>
+
+<a href="https://www.asabajumah.top/about.html">About</a>
+
+<a href="https://www.asabajumah.top/books.html">Books</a>
+
+<a href="https://www.asabajumah.top/blog.html">Blog</a>
+
+<a href="https://www.asabajumah.top/news.html">News</a>
+
+<a href="https://www.asabajumah.top/contact.html">Contact</a>
+
+</div>
+
+<!-- HERO -->
+<div class="hero">
+
+<h1>Books</h1>
+
+<p>Official books written by Asaba Jumah</p>
+
+</div>
+
+<!-- BOOKS -->
+<div class="container">
+
+<div class="books-grid">
+
+<!-- BOOK 1 -->
+<div class="book-card">
+
+<div class="book-image">
+
+<img src="https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png"
+alt="The Whispers of Kalenga Forest">
+
+</div>
+
+<div class="book-content">
+
+<h2>The Whispers of Kalenga Forest</h2>
+
+<p>
+A mysterious and emotional adventure story filled with suspense,
+hidden secrets and unforgettable moments deep inside Kalenga Forest.
+</p>
+
+<div class="meta">
+
+<span>📖 Novel</span>
+
+<span>🌍 Official Release</span>
+
+<span>📅 23 May 2025</span>
+
+</div>
+
+<a class="btn"
+href="https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html">
+
+Open Book
+
+</a>
+
+</div>
+
+</div>
+
+<!-- BOOK 2 -->
+<div class="book-card">
+
+<div class="book-image">
+
+<img src="https://www.asabajumah.top/books/img/the-last-night-of-nambale.png"
+alt="The Last Night of Nambale">
+
+</div>
+
+<div class="book-content">
+
+<h2>The Last Night of Nambale</h2>
+
+<p>
+An intense story of mystery, darkness and survival set during
+the final unforgettable night in Nambale.
+</p>
+
+<div class="meta">
+
+<span>📖 Thriller</span>
+
+<span>🌍 Official Release</span>
+
+<span>📅 10 May 2025</span>
+
+</div>
+
+<a class="btn"
+href="https://www.asabajumah.top/books/the-last-light-of-nambale.html">
+
+Open Book
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SOCIAL -->
+<div class="social">
+
+<h2>Official Profiles</h2>
+
+<div class="social-icons">
+
+<a href="https://www.facebook.com/djfelixpro">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://x.com/asabajumah">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="https://www.instagram.com/djfelixpro">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@asabajumah">
+<i class="fab fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/@asabajumah">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://www.imdb.com/name/nm18243050/">
+<i class="fab fa-imdb"></i>
+</a>
+
+<a href="https://www.themoviedb.org/person/6077619-asaba-jumah">
+<i class="fas fa-film"></i>
+</a>
+
+<a href="https://open.spotify.com/artist/4rneWabSFmcWDEKKsDN2mY">
+<i class="fab fa-spotify"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+© 2026 Asaba Jumah. All rights reserved.
+
+</footer>
+
+<!-- PROTECTION -->
+<div id="protectedMsg">Protected 🔒</div>
+
+<script>
+
+function showProtected(){
+
+let msg=document.getElementById("protectedMsg");
+
+msg.style.display="block";
+
+setTimeout(()=>{
+msg.style.display="none";
+},1500);
+
+}
+
+document.addEventListener("copy",function(e){
+e.preventDefault();
+showProtected();
+});
+
+document.addEventListener("contextmenu",function(e){
+e.preventDefault();
+showProtected();
+});
+
+</script>
+
+</body>
+</html>
