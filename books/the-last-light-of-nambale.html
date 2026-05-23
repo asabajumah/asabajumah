@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>The Last Light of Nambale – Asaba Jumah</title>
+
+<meta name="description" content="Official page for The Last Light of Nambale by Asaba Jumah. Read and discover the book on Google Books and Google Play Books." />
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+<!-- FONTAWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- BOOK SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Last Light of Nambale",
+  "author": {
+    "@type": "Person",
+    "name": "Asaba Jumah"
+  },
+  "datePublished": "2025-05-10",
+  "image": "https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png",
+  "inLanguage": "English",
+  "bookFormat": "EBook",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Google Play Books"
+  },
+  "url": "https://www.asabajumah.top/books/the-last-light-of-nambale.html",
+  "sameAs": [
+    "https://books.google.co.ug/books/about?id=R4rXEQAAQBAJ&redir_esc=y&hl=en",
+    "https://play.google.com/store/books/details?id=R4rXEQAAQBAJ"
+  ]
+}
+</script>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#020617;
+  color:white;
+  overflow-x:hidden;
+
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:15px;
+  background:#020617ee;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #1e293b;
+  z-index:999;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:120px 20px 60px;
+  position:relative;
+}
+
+/* WAVES */
+.wave{
+  position:absolute;
+  width:200%;
+  height:200px;
+  background:rgba(56,189,248,0.08);
+  border-radius:45%;
+  animation:waveMove 12s linear infinite;
+}
+
+.wave1{
+  bottom:-80px;
+}
+
+.wave2{
+  bottom:-100px;
+  animation-duration:18s;
+  opacity:0.5;
+}
+
+@keyframes waveMove{
+  from{
+    transform:translateX(0) rotate(0deg);
+  }
+  to{
+    transform:translateX(-25%) rotate(360deg);
+  }
+}
+
+/* CARD */
+.book-card{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:40px;
+  align-items:center;
+}
+
+/* COVER */
+.book-cover{
+  text-align:center;
+}
+
+.book-cover img{
+  width:100%;
+  max-width:360px;
+  border-radius:18px;
+  box-shadow:0 0 35px rgba(56,189,248,0.35);
+  transition:0.4s;
+}
+
+.book-cover img:hover{
+  transform:scale(1.03);
+}
+
+/* CONTENT */
+.book-content h1{
+  font-size:48px;
+  margin-bottom:15px;
+  color:#38bdf8;
+}
+
+.book-content p{
+  color:#cbd5e1;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.meta{
+  margin:25px 0;
+}
+
+.meta div{
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 24px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn-google{
+  background:#38bdf8;
+  color:#020617;
+}
+
+.btn-play{
+  background:#22c55e;
+  color:white;
+}
+
+.btn:hover{
+  transform:translateY(-3px) scale(1.03);
+  opacity:0.9;
+}
+
+/* ABOUT */
+.about-book{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.about-box{
+  background:#0f172a;
+  border:1px solid #1e293b;
+  border-radius:18px;
+  padding:30px;
+}
+
+.about-box h2{
+  color:#38bdf8;
+  margin-top:0;
+}
+
+/* FOOTER */
+footer{
+  margin-top:50px;
+  text-align:center;
+  padding:35px 20px;
+  border-top:1px solid #1e293b;
+  color:#94a3b8;
+}
+
+/* PROFILE LINKS */
+.footer-links{
+  margin-top:20px;
+}
+
+.footer-links a{
+  color:#38bdf8;
+  margin:10px;
+  font-size:24px;
+  transition:0.3s;
+}
+
+.footer-links a:hover{
+  color:white;
+  transform:scale(1.2);
+}
+
+/* PROTECTED MESSAGE */
+#protectedMsg{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:red;
+  color:white;
+  padding:10px 18px;
+  border-radius:8px;
+  font-weight:bold;
+  display:none;
+  z-index:99999;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="https://www.asabajumah.top">Home</a>
+  <a href="https://www.asabajumah.top/about.html">About</a>
+  <a href="https://www.asabajumah.top/blog.html">Blog</a>
+  <a href="https://www.asabajumah.top/contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="wave wave1"></div>
+<div class="wave wave2"></div>
+
+<div class="book-card">
+
+  <!-- COVER -->
+  <div class="book-cover">
+    <img src="https://www.asabajumah.top/books/img/the-last-night-of-nambale.png" alt="The Last Light of Nambale Book Cover">
+  </div>
+
+  <!-- CONTENT -->
+  <div class="book-content">
+
+    <h1>The Last Light of Nambale</h1>
+
+    <p>
+      An inspirational story, courage, and change
+      <strong>Asaba Jumah</strong>.
+    </p>
+
+    <div class="meta">
+      <div><strong>Author:</strong> Asaba Jumah</div>
+      <div><strong>Release Date:</strong> 10 May 2026</div>
+      <div><strong>Format:</strong> Digital Book / eBook</div>
+      <div><strong>Language:</strong> English</div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+      <a class="btn btn-google"
+      href="https://books.google.co.ug/books/about?id=R4rXEQAAQBAJ&redir_esc=y&hl=en"
+      target="_blank">
+      <i class="fab fa-google"></i>
+      Google Books
+      </a>
+
+      <a class="btn btn-play"
+      href="https://play.google.com/store/books/details?id=R4rXEQAAQBAJ"
+      target="_blank">
+      <i class="fab fa-google-play"></i>
+      Google Play Books
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about-book">
+
+<div class="about-box">
+
+<h2>About The Book</h2>
+
+<p>
+In a forgotten village surrounded by darkness, one young dreamer refuses to give up hope.
+
+“The Last Light of Nambale” follows the inspiring journey of Kato, a determined boy who leaves his home in search of a way to restore electricity to his struggling community.
+
+Filled with courage, innovation, and heart, this powerful story explores leadership, resilience, and the belief that even one person can change the future.
+
+Written by Ugandan actor and artist Asaba Jumah, this inspirational story encourages readers to dream bigger and become a light in their own communiti
+
+es.
+</p>
+
+<p>
+Set within the legendary Nambale, the book follows hidden truths,
+unexpected encounters, and the power of survival against fear.
+</p>
+
+<p>
+Written by Asaba Jumah, the novel explores imagination, suspense,
+and storytelling inspired by African creativity and cinematic atmosphere.
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p>© 2026 Asaba Jumah. All rights reserved.</p>
+
+<div class="footer-links">
+
+<a href="https://www.facebook.com/djfelixpro">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://x.com/asabajumah">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="https://www.instagram.com/djfelixpro">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@asabajumah">
+<i class="fab fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/@asabajumah">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://www.imdb.com/name/nm18243050/">
+<i class="fab fa-imdb"></i>
+</a>
+
+<a href="https://www.themoviedb.org/person/6077619-asaba-jumah">
+<i class="fas fa-film"></i>
+</a>
+
+<a href="https://open.spotify.com/artist/4rneWabSFmcWDEKKsDN2mY">
+<i class="fab fa-spotify"></i>
+</a>
+
+<a href="https://tidal.com/artist/77292471">
+<i class="fas fa-music"></i>
+</a>
+
+<a href="https://music.amazon.ca/artists/B0GW8CSKRR/asaba-jumah">
+<i class="fab fa-amazon"></i>
+</a>
+
+<a href="https://www.deezer.com/us/artist/383696591">
+<i class="fas fa-compact-disc"></i>
+</a>
+
+</div>
+
+</footer>
+
+<!-- PROTECTION -->
+<div id="protectedMsg">Protected 🔒</div>
+
+<script>
+function showProtected(){
+  let msg = document.getElementById("protectedMsg");
+
+  msg.style.display = "block";
+
+  setTimeout(()=>{
+    msg.style.display = "none";
+  },1500);
+}
+
+document.addEventListener("copy", function(e){
+  e.preventDefault();
+  showProtected();
+});
+
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+  showProtected();
+});
+</script>
+
+</body>
+</html>
