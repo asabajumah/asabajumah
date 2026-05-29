@@ -6,7 +6,7 @@
 
 <title>The Smiling Man in Room 13 – Asaba Jumah</title>
 
-<meta name="description" content="Official page for The Smiling Man in Room 13 by Asaba Jumah. Read and discover the horror book on Google Books and Google Play Books." />
+<meta name="description" content="Official page for The Smiling Man in Room 13 by Asaba Jumah. Read and discover the horror book on Google Books, Google Play Books and Amazon Kindle." />
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -34,7 +34,8 @@
   "url": "https://www.asabajumah.top/books/the-smiling-man-in-room-13.html",
   "sameAs": [
     "https://books.google.co.ug/books/about?id=jx_cEQAAQBAJ&redir_esc=y",
-    "https://play.google.com/store/books/details?id=jx_cEQAAQBAJ"
+    "https://play.google.com/store/books/details?id=jx_cEQAAQBAJ",
+    "https://www.amazon.com/dp/B0H37P8CWZ"
   ]
 }
 </script>
@@ -197,6 +198,11 @@ body{
   color:white;
 }
 
+.btn-amazon{
+  background:#f59e0b;
+  color:white;
+}
+
 .btn:hover{
   transform:translateY(-3px) scale(1.03);
   opacity:0.9;
@@ -260,6 +266,23 @@ footer{
   font-weight:bold;
   display:none;
   z-index:99999;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.book-content h1{
+  font-size:36px;
+}
+
+.buttons{
+  flex-direction:column;
+}
+
+.btn{
+  justify-content:center;
+}
+
 }
 </style>
 </head>
@@ -326,6 +349,13 @@ footer{
       target="_blank">
       <i class="fab fa-google-play"></i>
       Google Play Books
+      </a>
+
+      <a class="btn btn-amazon"
+      href="https://www.amazon.com/dp/B0H37P8CWZ/ref=mp_s_a_1_2?dib=eyJ2IjoiMSJ9.qsiID9Y2JhPsuczfCe1qb9l9kaSxx-ZR_9y9p3wjLcmhpR1HG4TIMlTXJUfmXpvsKOC5LdmTvww10oYY2ZLZMg.KhwBS-ORnAYVHc-aM3_zOm60MJ4zUstiBM45M3soAhA&dib_tag=se&qid=1780031573&refinements=p_27%3AAsaba+Jumah&s=digital-text&sr=1-2&text=Asaba+Jumah"
+      target="_blank">
+      <i class="fab fa-amazon"></i>
+      Amazon Kindle
       </a>
 
     </div>
