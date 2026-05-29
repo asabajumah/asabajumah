@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
 
 <title>The Last Light of Nambale – Asaba Jumah</title>
 
-<meta name="description" content="Official page for The Last Light of Nambale by Asaba Jumah. Read and discover the book on Google Books and Google Play Books." />
+<meta name="description" content="Official page for The Last Light of Nambale by Asaba Jumah. Read and discover the book on Google Books, Google Play Books and Amazon Kindle." />
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -24,8 +23,8 @@
     "@type": "Person",
     "name": "Asaba Jumah"
   },
-  "datePublished": "2025-05-10",
-  "image": "https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png",
+  "datePublished": "2026-05-10",
+  "image": "https://www.asabajumah.top/books/img/the-last-night-of-nambale.png",
   "inLanguage": "English",
   "bookFormat": "EBook",
   "publisher": {
@@ -35,7 +34,8 @@
   "url": "https://www.asabajumah.top/books/the-last-light-of-nambale.html",
   "sameAs": [
     "https://books.google.co.ug/books/about?id=R4rXEQAAQBAJ&redir_esc=y&hl=en",
-    "https://play.google.com/store/books/details?id=R4rXEQAAQBAJ"
+    "https://play.google.com/store/books/details?id=R4rXEQAAQBAJ",
+    "https://www.amazon.com/dp/B0H37L6G61"
   ]
 }
 </script>
@@ -198,6 +198,11 @@ body{
   color:white;
 }
 
+.btn-amazon{
+  background:#f59e0b;
+  color:#020617;
+}
+
 .btn:hover{
   transform:translateY(-3px) scale(1.03);
   opacity:0.9;
@@ -262,6 +267,23 @@ footer{
   display:none;
   z-index:99999;
 }
+
+/* MOBILE */
+@media(max-width:768px){
+
+.book-content h1{
+  font-size:36px;
+}
+
+.buttons{
+  flex-direction:column;
+}
+
+.btn{
+  justify-content:center;
+}
+
+}
 </style>
 </head>
 
@@ -294,7 +316,8 @@ footer{
     <h1>The Last Light of Nambale</h1>
 
     <p>
-      An inspirational story, courage, and change
+      An inspirational story about hope, courage, innovation,
+      and change written by
       <strong>Asaba Jumah</strong>.
     </p>
 
@@ -303,6 +326,7 @@ footer{
       <div><strong>Release Date:</strong> 10 May 2026</div>
       <div><strong>Format:</strong> Digital Book / eBook</div>
       <div><strong>Language:</strong> English</div>
+      <div><strong>Genre:</strong> Inspirational Fiction</div>
     </div>
 
     <!-- BUTTONS -->
@@ -322,6 +346,13 @@ footer{
       Google Play Books
       </a>
 
+      <a class="btn btn-amazon"
+      href="https://www.amazon.com/dp/B0H37L6G61/ref=mp_s_a_1_3?dib=eyJ2IjoiMSJ9.qsiID9Y2JhPsuczfCe1qb9l9kaSxx-ZR_9y9p3wjLcmhpR1HG4TIMlTXJUfmXpvsKOC5LdmTvww10oYY2ZLZMg.KhwBS-ORnAYVHc-aM3_zOm60MJ4zUstiBM45M3soAhA&dib_tag=se&qid=1780031351&refinements=p_27%3AAsaba+Jumah&s=digital-text&sr=1-3&text=Asaba+Jumah"
+      target="_blank">
+      <i class="fab fa-amazon"></i>
+      Amazon Kindle
+      </a>
+
     </div>
 
   </div>
@@ -339,24 +370,22 @@ footer{
 
 <p>
 In a forgotten village surrounded by darkness, one young dreamer refuses to give up hope.
-
-“The Last Light of Nambale” follows the inspiring journey of Kato, a determined boy who leaves his home in search of a way to restore electricity to his struggling community.
-
-Filled with courage, innovation, and heart, this powerful story explores leadership, resilience, and the belief that even one person can change the future.
-
-Written by Ugandan actor and artist Asaba Jumah, this inspirational story encourages readers to dream bigger and become a light in their own communiti
-
-es.
 </p>
 
 <p>
-Set within the legendary Nambale, the book follows hidden truths,
-unexpected encounters, and the power of survival against fear.
+“The Last Light of Nambale” follows the inspiring journey of Kato,
+a determined boy who leaves his home in search of a way to restore
+electricity to his struggling community.
 </p>
 
 <p>
-Written by Asaba Jumah, the novel explores imagination, suspense,
-and storytelling inspired by African creativity and cinematic atmosphere.
+Filled with courage, innovation, and heart, this powerful story explores
+leadership, resilience, and the belief that even one person can change the future.
+</p>
+
+<p>
+Written by Ugandan actor and artist Asaba Jumah, this inspirational story
+encourages readers to dream bigger and become a light in their own communities.
 </p>
 
 </div>
@@ -423,6 +452,7 @@ and storytelling inspired by African creativity and cinematic atmosphere.
 
 <script>
 function showProtected(){
+
   let msg = document.getElementById("protectedMsg");
 
   msg.style.display = "block";
@@ -430,6 +460,7 @@ function showProtected(){
   setTimeout(()=>{
     msg.style.display = "none";
   },1500);
+
 }
 
 document.addEventListener("copy", function(e){
