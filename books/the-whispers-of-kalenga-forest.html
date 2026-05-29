@@ -6,7 +6,7 @@
 
 <title>The Whispers of Kalenga Forest – Asaba Jumah</title>
 
-<meta name="description" content="Official page for The Whispers of Kalenga Forest by Asaba Jumah. Read and discover the book on Google Books, Google Play Books and Amazon Kindle." />
+<meta name="description" content="Official page for The Whispers of Kalenga Forest by Asaba Jumah. Read and discover the book on Google Books, Google Play Books, Amazon Kindle, or buy directly." />
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -35,7 +35,8 @@
   "sameAs": [
     "https://books.google.co.ug/books/about?id=R4rXEQAAQBAJ&redir_esc=y&hl=en",
     "https://play.google.com/store/books/details?id=R4rXEQAAQBAJ",
-    "https://www.amazon.com/dp/B0H2Z8CN66"
+    "https://www.amazon.com/dp/B0H2Z8CN66",
+    "https://payhip.com/b/HenfT"
   ]
 }
 </script>
@@ -47,7 +48,6 @@ body{
   background:#020617;
   color:white;
   overflow-x:hidden;
-
   -webkit-user-select:none;
   -ms-user-select:none;
   user-select:none;
@@ -110,12 +110,8 @@ body{
 }
 
 @keyframes waveMove{
-  from{
-    transform:translateX(0) rotate(0deg);
-  }
-  to{
-    transform:translateX(-25%) rotate(360deg);
-  }
+  from{ transform:translateX(0) rotate(0deg); }
+  to{ transform:translateX(-25%) rotate(360deg); }
 }
 
 /* CARD */
@@ -180,6 +176,7 @@ body{
 .btn{
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   gap:10px;
   padding:14px 24px;
   border-radius:10px;
@@ -188,24 +185,14 @@ body{
   transition:0.3s;
 }
 
-.btn-google{
-  background:#38bdf8;
-  color:#020617;
-}
-
-.btn-play{
-  background:#22c55e;
-  color:white;
-}
-
-.btn-amazon{
-  background:#f59e0b;
-  color:#020617;
-}
+.btn-google{ background:#38bdf8; color:#020617; }
+.btn-play{ background:#22c55e; color:white; }
+.btn-amazon{ background:#f59e0b; color:#111827; }
+.btn-buy{ background:#38bdf8; color:#020617; box-shadow:0 0 20px rgba(56,189,248,0.45); }
 
 .btn:hover{
   transform:translateY(-3px) scale(1.03);
-  opacity:0.9;
+  opacity:0.92;
 }
 
 /* ABOUT */
@@ -236,7 +223,6 @@ footer{
   color:#94a3b8;
 }
 
-/* PROFILE LINKS */
 .footer-links{
   margin-top:20px;
 }
@@ -267,6 +253,12 @@ footer{
   display:none;
   z-index:99999;
 }
+
+@media(max-width:768px){
+  .book-content h1{ font-size:38px; }
+  .buttons{ flex-direction:column; }
+  .btn{ width:100%; justify-content:center; }
+}
 </style>
 </head>
 
@@ -275,14 +267,13 @@ footer{
 <!-- NAVBAR -->
 <div class="navbar">
   <a href="https://www.asabajumah.top">Home</a>
+  <a href="https://www.asabajumah.top/books.html">Books Store</a>
   <a href="https://www.asabajumah.top/about.html">About</a>
-  <a href="https://www.asabajumah.top/blog.html">Blog</a>
   <a href="https://www.asabajumah.top/contact.html">Contact</a>
 </div>
 
 <!-- HERO -->
 <section class="hero">
-
 <div class="wave wave1"></div>
 <div class="wave wave2"></div>
 
@@ -295,163 +286,82 @@ footer{
 
   <!-- CONTENT -->
   <div class="book-content">
-
     <h1>The Whispers of Kalenga Forest</h1>
 
-    <p>
-      A mysterious and emotional story written by Ugandan author 
-      <strong>Asaba Jumah</strong>.
-    </p>
-
-    <p>
-      Journey deep into Kalenga Forest where hidden secrets, fear,
-      survival, and destiny collide in an unforgettable adventure.
-    </p>
+    <p>A mysterious and emotional story written by Ugandan author <strong>Asaba Jumah</strong>.</p>
+    <p>Journey deep into Kalenga Forest where hidden secrets, fear, survival, and destiny collide in an unforgettable adventure.</p>
 
     <div class="meta">
       <div><strong>Author:</strong> Asaba Jumah</div>
       <div><strong>Release Date:</strong> 23 May 2026</div>
       <div><strong>Format:</strong> Digital Book / eBook</div>
       <div><strong>Language:</strong> English</div>
+      <div><strong>Price:</strong> $14 USD</div>
     </div>
 
     <!-- BUTTONS -->
     <div class="buttons">
 
-      <a class="btn btn-google"
-      href="https://books.google.co.ug/books/about?id=ucPbEQAAQBAJ&redir_esc=y&hl=en"
-      target="_blank">
-      <i class="fab fa-google"></i>
-      Google Books
+      <a class="btn btn-buy" href="https://payhip.com/b/HenfT" target="_blank">
+        <i class="fas fa-cart-shopping"></i> Buy Now $14
       </a>
 
-      <a class="btn btn-play"
-      href="https://play.google.com/store/books/details/Asaba_Jumah_THE_WHISPERS_OF_KALENGA_FOREST?id=ucPbEQAAQBAJ"
-      target="_blank">
-      <i class="fab fa-google-play"></i>
-      Google Play Books
+      <a class="btn btn-google" href="https://books.google.co.ug/books/about?id=R4rXEQAAQBAJ&redir_esc=y&hl=en" target="_blank">
+        <i class="fab fa-google"></i> Google Books
       </a>
 
-      <a class="btn btn-amazon"
-      href="https://www.amazon.com/dp/B0H2Z8CN66/ref=sr_1_1?dib=eyJ2IjoiMSJ9.wbdHUbI8h0iQYwdlMyWiHg.DJvUQslY-Dj31mnrIrkqqzwhmPJFiHeF3P0-aLZQx6I&dib_tag=se&qid=1779820536&refinements=p_27%3AAsaba++Jumah&s=digital-text&sr=1-1&text=Asaba++Jumah"
-      target="_blank">
-      <i class="fab fa-amazon"></i>
-      Amazon Kindle
+      <a class="btn btn-play" href="https://play.google.com/store/books/details?id=R4rXEQAAQBAJ" target="_blank">
+        <i class="fab fa-google-play"></i> Google Play Books
+      </a>
+
+      <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0H2Z8CN66" target="_blank">
+        <i class="fab fa-amazon"></i> Amazon Kindle
       </a>
 
     </div>
 
   </div>
-
 </div>
-
 </section>
 
 <!-- ABOUT -->
 <section class="about-book">
-
 <div class="about-box">
-
 <h2>About The Book</h2>
-
-<p>
-The Whispers of Kalenga Forest is a captivating story that blends mystery,
-emotion, and adventure into one unforgettable experience.
-</p>
-
-<p>
-Set within the legendary Kalenga Forest, the book follows hidden truths,
-unexpected encounters, and the power of survival against fear.
-</p>
-
-<p>
-Written by Asaba Jumah, the novel explores imagination, suspense,
-and storytelling inspired by African creativity and cinematic atmosphere.
-</p>
-
+<p>The Whispers of Kalenga Forest is a captivating story that blends mystery, emotion, and adventure into one unforgettable experience.</p>
+<p>Set within the legendary Kalenga Forest, the book follows hidden truths, unexpected encounters, and the power of survival against fear.</p>
+<p>Written by Asaba Jumah, the novel explores imagination, suspense, and storytelling inspired by African creativity and cinematic atmosphere.</p>
 </div>
-
 </section>
 
 <!-- FOOTER -->
 <footer>
-
 <p>© 2026 Asaba Jumah. All rights reserved.</p>
-
 <div class="footer-links">
-
-<a href="https://www.facebook.com/djfelixpro">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="https://x.com/asabajumah">
-<i class="fab fa-x-twitter"></i>
-</a>
-
-<a href="https://www.instagram.com/djfelixpro">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.tiktok.com/@asabajumah">
-<i class="fab fa-tiktok"></i>
-</a>
-
-<a href="https://www.youtube.com/@asabajumah">
-<i class="fab fa-youtube"></i>
-</a>
-
-<a href="https://www.imdb.com/name/nm18243050/">
-<i class="fab fa-imdb"></i>
-</a>
-
-<a href="https://www.themoviedb.org/person/6077619-asaba-jumah">
-<i class="fas fa-film"></i>
-</a>
-
-<a href="https://open.spotify.com/artist/4rneWabSFmcWDEKKsDN2mY">
-<i class="fab fa-spotify"></i>
-</a>
-
-<a href="https://tidal.com/artist/77292471">
-<i class="fas fa-music"></i>
-</a>
-
-<a href="https://music.amazon.com/artists/B0GW8CSKRR/asaba-jumah">
-<i class="fab fa-amazon"></i>
-</a>
-
-<a href="https://www.deezer.com/us/artist/383696591">
-<i class="fas fa-compact-disc"></i>
-</a>
-
+<a href="https://www.facebook.com/djfelixpro"><i class="fab fa-facebook"></i></a>
+<a href="https://x.com/asabajumah"><i class="fab fa-x-twitter"></i></a>
+<a href="https://www.instagram.com/djfelixpro"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@asabajumah"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.youtube.com/@asabajumah"><i class="fab fa-youtube"></i></a>
+<a href="https://www.imdb.com/name/nm18243050/"><i class="fab fa-imdb"></i></a>
+<a href="https://www.themoviedb.org/person/6077619-asaba-jumah"><i class="fas fa-film"></i></a>
+<a href="https://open.spotify.com/artist/4rneWabSFmcWDEKKsDN2mY"><i class="fab fa-spotify"></i></a>
+<a href="https://tidal.com/artist/77292471"><i class="fas fa-music"></i></a>
+<a href="https://music.amazon.com/artists/B0GW8CSKRR/asaba-jumah"><i class="fab fa-amazon"></i></a>
+<a href="https://www.deezer.com/us/artist/383696591"><i class="fas fa-compact-disc"></i></a>
 </div>
-
 </footer>
 
 <!-- PROTECTION -->
 <div id="protectedMsg">Protected 🔒</div>
-
 <script>
 function showProtected(){
   let msg = document.getElementById("protectedMsg");
-
   msg.style.display = "block";
-
-  setTimeout(()=>{
-    msg.style.display = "none";
-  },1500);
+  setTimeout(()=>{ msg.style.display = "none"; },1500);
 }
-
-document.addEventListener("copy", function(e){
-  e.preventDefault();
-  showProtected();
-});
-
-document.addEventListener("contextmenu", function(e){
-  e.preventDefault();
-  showProtected();
-});
+document.addEventListener("copy", function(e){ e.preventDefault(); showProtected(); });
+document.addEventListener("contextmenu", function(e){ e.preventDefault(); showProtected(); });
 </script>
-
 </body>
 </html>
