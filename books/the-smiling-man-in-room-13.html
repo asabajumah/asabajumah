@@ -31,11 +31,19 @@
     "@type": "Organization",
     "name": "Google Play Books"
   },
+  "offers": {
+    "@type": "Offer",
+    "price": "8.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://payhip.com/b/JqfZ3"
+  },
   "url": "https://www.asabajumah.top/books/the-smiling-man-in-room-13.html",
   "sameAs": [
     "https://books.google.co.ug/books/about?id=jx_cEQAAQBAJ&redir_esc=y",
     "https://play.google.com/store/books/details?id=jx_cEQAAQBAJ",
-    "https://www.amazon.com/dp/B0H37P8CWZ"
+    "https://www.amazon.com/dp/B0H37P8CWZ",
+    "https://payhip.com/b/JqfZ3"
   ]
 }
 </script>
@@ -203,6 +211,17 @@ body{
   color:white;
 }
 
+/* BUY BUTTON */
+.btn-buy{
+  background:linear-gradient(135deg,#8b5cf6,#ec4899);
+  color:white;
+  box-shadow:0 0 20px rgba(236,72,153,0.4);
+}
+
+.btn-buy:hover{
+  box-shadow:0 0 25px rgba(236,72,153,0.7);
+}
+
 .btn:hover{
   transform:translateY(-3px) scale(1.03);
   opacity:0.9;
@@ -332,10 +351,18 @@ footer{
       <div><strong>Format:</strong> Digital Book / eBook</div>
       <div><strong>Language:</strong> English</div>
       <div><strong>Genre:</strong> Horror / Mystery</div>
+      <div><strong>Price:</strong> $8.00 USD</div>
     </div>
 
     <!-- BUTTONS -->
     <div class="buttons">
+
+      <a class="btn btn-buy"
+      href="https://payhip.com/b/JqfZ3"
+      target="_blank">
+      <i class="fas fa-cart-shopping"></i>
+      Buy Now – $8.00
+      </a>
 
       <a class="btn btn-google"
       href="https://books.google.co.ug/books/about?id=jx_cEQAAQBAJ&redir_esc=y"
