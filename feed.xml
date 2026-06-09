@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+<title>Asaba Jumah Books Store</title>
+<link>https://www.asabajumah.top/books.html</link>
+<description>Official books by Asaba Jumah</description>
+
+<item>
+<g:id>BOOK001</g:id>
+<g:title>The Whispers of Kalenga Forest</g:title>
+<g:link>https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html</g:link>
+<g:image_link>https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:condition>new</g:condition>
+<g:price>9.99 USD</g:price>
+</item>
+
+<item>
+<g:id>BOOK002</g:id>
+<g:title>The Last Night of Nambale</g:title>
+<g:link>https://www.asabajumah.top/books/the-last-light-of-nambale.html</g:link>
+<g:image_link>https://www.asabajumah.top/books/img/the-last-night-of-nambale.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:condition>new</g:condition>
+<g:price>9.99 USD</g:price>
+</item>
+
+<item>
+<g:id>BOOK003</g:id>
+<g:title>The Smiling Man in Room 13</g:title>
+<g:link>https://www.asabajumah.top/books/the-smiling-man-in-room-13.html</g:link>
+<g:image_link>https://www.asabajumah.top/books/img/the-smiling-man-in-room-13.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:condition>new</g:condition>
+<g:price>9.99 USD</g:price>
+</item>
+
+<item>
+<g:id>BOOK004</g:id>
+<g:title>I Am Asaba Jumah</g:title>
+<g:link>https://www.asabajumah.top/books/i-am-asaba-jumah.html</g:link>
+<g:image_link>https://www.asabajumah.top/books/img/i-am-asaba-jumah.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:condition>new</g:condition>
+<g:price>9.99 USD</g:price>
+</item>
+
+<item>
+<g:id>BOOK005</g:id>
+<g:title>The House Beneath Black Hill</g:title>
+<g:link>https://www.asabajumah.top/books/the-house-beneath-black-hill.html</g:link>
+<g:image_link>https://www.asabajumah.top/books/img/the-house-beneath-black-hill.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:condition>new</g:condition>
+<g:price>9.99 USD</g:price>
+</item>
+
+</channel>
+</rss>
