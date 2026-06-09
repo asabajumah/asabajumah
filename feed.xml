@@ -1,58 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<rss version="2.0"
+xmlns:g="http://base.google.com/ns/1.0">
+
 <channel>
+
 <title>Asaba Jumah Books Store</title>
 <link>https://www.asabajumah.top/books.html</link>
-<description>Official books by Asaba Jumah</description>
+<description>Official books written by Asaba Jumah. Explore novels, horror stories, biographies, thrillers and creative books.</description>
 
+<!-- BOOK 1 -->
 <item>
 <g:id>BOOK001</g:id>
 <g:title>The Whispers of Kalenga Forest</g:title>
+<g:description><![CDATA[
+A gripping adventure novel by Asaba Jumah that takes readers deep into the mysterious Kalenga Forest. Filled with suspense, hidden secrets, emotional discoveries and unforgettable characters, this story explores courage, friendship and the unknown mysteries hidden beneath the forest's ancient trees.
+]]></g:description>
 <g:link>https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html</g:link>
 <g:image_link>https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:condition>new</g:condition>
 <g:price>14.00 USD</g:price>
+<g:brand>Asaba Jumah</g:brand>
+<g:product_type>Novel</g:product_type>
+<g:google_product_category>784</g:google_product_category>
+<g:identifier_exists>false</g:identifier_exists>
 </item>
 
+<!-- BOOK 2 -->
 <item>
 <g:id>BOOK002</g:id>
 <g:title>The Last Night of Nambale</g:title>
+<g:description><![CDATA[
+An intense thriller novel set during the final night in the mysterious village of Nambale. Darkness, fear, shocking revelations and a desperate fight for survival combine to create a gripping story that keeps readers engaged from beginning to end.
+]]></g:description>
 <g:link>https://www.asabajumah.top/books/the-last-light-of-nambale.html</g:link>
 <g:image_link>https://www.asabajumah.top/books/img/the-last-night-of-nambale.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:condition>new</g:condition>
-<g:price>0.00 USD</g:price>
+<g:price>10.00 USD</g:price>
+<g:brand>Asaba Jumah</g:brand>
+<g:product_type>Thriller</g:product_type>
+<g:google_product_category>784</g:google_product_category>
+<g:identifier_exists>false</g:identifier_exists>
 </item>
 
+<!-- BOOK 3 -->
 <item>
 <g:id>BOOK003</g:id>
 <g:title>The Smiling Man in Room 13</g:title>
+<g:description><![CDATA[
+A terrifying horror mystery set inside an old boarding school where strange footsteps echo through empty hallways after midnight. As fear spreads among students, the legend of the smiling man becomes more real than anyone could imagine. A chilling story packed with suspense, mystery and supernatural horror.
+]]></g:description>
 <g:link>https://www.asabajumah.top/books/the-smiling-man-in-room-13.html</g:link>
 <g:image_link>https://www.asabajumah.top/books/img/the-smiling-man-in-room-13.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:condition>new</g:condition>
-<g:price>0.00 USD</g:price>
+<g:price>8.00 USD</g:price>
+<g:brand>Asaba Jumah</g:brand>
+<g:product_type>Horror</g:product_type>
+<g:google_product_category>784</g:google_product_category>
+<g:identifier_exists>false</g:identifier_exists>
 </item>
 
+<!-- BOOK 4 -->
 <item>
 <g:id>BOOK004</g:id>
 <g:title>I Am Asaba Jumah</g:title>
+<g:description><![CDATA[
+An inspiring autobiography that explores the life and journey of Asaba Jumah. From music and acting to storytelling and creativity, this book shares personal experiences, achievements, ambitions and lessons learned throughout a remarkable artistic career.
+]]></g:description>
 <g:link>https://www.asabajumah.top/books/i-am-asaba-jumah.html</g:link>
 <g:image_link>https://www.asabajumah.top/books/img/i-am-asaba-jumah.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:condition>new</g:condition>
-<g:price>0.00 USD</g:price>
+<g:price>143.00 USD</g:price>
+<g:brand>Asaba Jumah</g:brand>
+<g:product_type>Biography</g:product_type>
+<g:google_product_category>784</g:google_product_category>
+<g:identifier_exists>false</g:identifier_exists>
 </item>
 
+<!-- BOOK 5 -->
 <item>
 <g:id>BOOK005</g:id>
 <g:title>The House Beneath Black Hill</g:title>
+<g:description><![CDATA[
+A chilling supernatural horror novel about a forgotten mansion hidden deep within Black Hill Forest. Strange whispers, unexplained disappearances, dark rituals and an ancient evil haunt everyone who dares to enter. A terrifying story for fans of suspense and horror.
+]]></g:description>
 <g:link>https://www.asabajumah.top/books/the-house-beneath-black-hill.html</g:link>
 <g:image_link>https://www.asabajumah.top/books/img/the-house-beneath-black-hill.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:condition>new</g:condition>
-<g:price>0.00 USD</g:price>
+<g:price>5.00 USD</g:price>
+<g:brand>Asaba Jumah</g:brand>
+<g:product_type>Supernatural Horror</g:product_type>
+<g:google_product_category>784</g:google_product_category>
+<g:identifier_exists>false</g:identifier_exists>
 </item>
 
 </channel>
