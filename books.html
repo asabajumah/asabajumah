@@ -11,6 +11,9 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <!-- SCHEMA -->
 <script type="application/ld+json">
 {
@@ -23,7 +26,6 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
       "url":"https://www.asabajumah.top",
       "image":"https://www.asabajumah.top/asabajumah.jpg",
       "jobTitle":["Author","Actor","Artist"],
-
       "sameAs":[
         "https://www.facebook.com/djfelixpro",
         "https://x.com/asabajumah",
@@ -40,10 +42,7 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
       "name":"The Whispers of Kalenga Forest",
       "url":"https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html",
       "image":"https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png",
-      "author":{
-        "@type":"Person",
-        "name":"Asaba Jumah"
-      },
+      "author":{"@type":"Person","name":"Asaba Jumah"},
       "datePublished":"2026-05-23"
     },
 
@@ -52,10 +51,7 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
       "name":"The Last Night of Nambale",
       "url":"https://www.asabajumah.top/books/the-last-light-of-nambale.html",
       "image":"https://www.asabajumah.top/books/img/the-last-night-of-nambale.png",
-      "author":{
-        "@type":"Person",
-        "name":"Asaba Jumah"
-      },
+      "author":{"@type":"Person","name":"Asaba Jumah"},
       "datePublished":"2026-05-10"
     },
 
@@ -64,10 +60,7 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
       "name":"The Smiling Man in Room 13",
       "url":"https://www.asabajumah.top/books/the-smiling-man-in-room-13.html",
       "image":"https://www.asabajumah.top/books/img/the-smiling-man-in-room-13.png",
-      "author":{
-        "@type":"Person",
-        "name":"Asaba Jumah"
-      },
+      "author":{"@type":"Person","name":"Asaba Jumah"},
       "datePublished":"2026-05-24"
     },
 
@@ -76,10 +69,7 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
       "name":"I Am Asaba Jumah",
       "url":"https://www.asabajumah.top/books/i-am-asaba-jumah.html",
       "image":"https://www.asabajumah.top/books/img/i-am-asaba-jumah.png",
-      "author":{
-        "@type":"Person",
-        "name":"Asaba Jumah"
-      },
+      "author":{"@type":"Person","name":"Asaba Jumah"},
       "datePublished":"2026-05-24"
     },
 
@@ -88,22 +78,35 @@ content="Official books by Asaba Jumah. Explore novels, horror stories, biograph
       "name":"The House Beneath Black Hill",
       "url":"https://www.asabajumah.top/books/the-house-beneath-black-hill.html",
       "image":"https://www.asabajumah.top/books/img/the-house-beneath-black-hill.png",
-      "author":{
-        "@type":"Person",
-        "name":"Asaba Jumah"
-      },
+      "author":{"@type":"Person","name":"Asaba Jumah"},
       "datePublished":"2026-05-26"
+    },
+
+    {
+      "@type":"Book",
+      "name":"Whispers of the Heart",
+      "url":"https://www.asabajumah.top/books/whispers-of-the-heart.html",
+      "image":"https://www.asabajumah.top/books/img/whispers-of-the-heart.png",
+      "author":{"@type":"Person","name":"Asaba Jumah"},
+      "datePublished":"2026-06-13",
+      "offers":{
+        "@type":"Offer",
+        "price":"1.00",
+        "priceCurrency":"USD",
+        "url":"https://payhip.com/buy?s=1&cart_links%5B%5D=hGbQn&qty%5BhGbQn%5D=1"
+      },
+      "sameAs":[
+        "https://www.amazon.com/Whispers-Heart-Asaba-Jumah-ebook/dp/B0H4VB5T2P",
+        "https://books.google.com/books?id=MHfkEQAAQBAJ&newbks=0&hl=en&source=newbks_fb",
+        "https://payhip.com/buy?s=1&cart_links%5B%5D=hGbQn&qty%5BhGbQn%5D=1"
+      ]
     }
 
   ]
 }
 </script>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
-
 body{
 margin:0;
 font-family:Arial,sans-serif;
@@ -113,7 +116,6 @@ overflow-x:hidden;
 padding-top:70px;
 }
 
-/* NAVBAR */
 .navbar{
 position:fixed;
 top:0;
@@ -132,95 +134,42 @@ z-index:999;
 color:white;
 text-decoration:none;
 font-weight:bold;
-transition:0.3s;
 }
 
-.navbar a:hover{
-color:#38bdf8;
-}
+.navbar a:hover{color:#38bdf8;}
 
-/* HERO */
 .hero{
 text-align:center;
 padding:100px 20px;
-background:
-linear-gradient(to bottom,#020617,#0f172a);
-position:relative;
-overflow:hidden;
+background:linear-gradient(to bottom,#020617,#0f172a);
 }
 
-.hero::before{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:#38bdf8;
-filter:blur(180px);
-opacity:0.12;
-top:-200px;
-left:-100px;
-}
+.hero h1{font-size:52px;margin:0;}
+.hero p{color:#94a3b8;font-size:18px;margin-top:15px;}
 
-.hero::after{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:#8b5cf6;
-filter:blur(180px);
-opacity:0.12;
-bottom:-250px;
-right:-100px;
-}
-
-.hero h1{
-font-size:52px;
-margin:0;
-position:relative;
-z-index:2;
-}
-
-.hero p{
-color:#94a3b8;
-font-size:18px;
-position:relative;
-z-index:2;
-margin-top:15px;
-}
-
-/* CONTAINER */
 .container{
 max-width:1300px;
 margin:auto;
 padding:40px 20px;
 }
 
-/* GRID */
 .books-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:35px;
 }
 
-/* BOOK CARD */
 .book-card{
 background:#111827;
 border:1px solid #1e293b;
 border-radius:24px;
 overflow:hidden;
 transition:0.4s;
-box-shadow:0 10px 35px rgba(0,0,0,0.35);
 }
 
 .book-card:hover{
 transform:translateY(-8px);
 border-color:#38bdf8;
-}
-
-/* IMAGE */
-.book-image{
-position:relative;
-overflow:hidden;
 }
 
 .book-image img{
@@ -230,31 +179,15 @@ object-fit:cover;
 transition:0.5s;
 }
 
-.book-card:hover img{
-transform:scale(1.05);
-}
+.book-card:hover img{transform:scale(1.05);}
 
-/* CONTENT */
-.book-content{
-padding:25px;
-}
+.book-content{padding:25px;}
 
-.book-content h2{
-margin-top:0;
-font-size:30px;
-margin-bottom:15px;
-}
+.book-content h2{margin:0 0 15px;font-size:30px;}
 
-.book-content p{
-color:#cbd5e1;
-line-height:1.7;
-}
+.book-content p{color:#cbd5e1;line-height:1.7;}
 
-/* META */
-.meta{
-margin-top:18px;
-margin-bottom:20px;
-}
+.meta{margin-top:18px;margin-bottom:20px;}
 
 .meta span{
 display:inline-block;
@@ -267,10 +200,8 @@ font-size:13px;
 color:#38bdf8;
 }
 
-/* BUTTON */
 .btn{
 display:inline-block;
-margin-top:10px;
 padding:14px 24px;
 background:#38bdf8;
 color:#020617;
@@ -280,20 +211,10 @@ font-weight:bold;
 transition:0.3s;
 }
 
-.btn:hover{
-transform:scale(1.05);
-opacity:0.9;
-}
+.btn:hover{transform:scale(1.05);opacity:0.9;}
 
-/* SOCIAL */
-.social{
-text-align:center;
-margin-top:70px;
-}
-
-.social h2{
-margin-bottom:20px;
-}
+.social{text-align:center;margin-top:70px;}
+.social h2{margin-bottom:20px;}
 
 .social-icons a{
 display:inline-block;
@@ -303,12 +224,8 @@ color:#38bdf8;
 transition:0.3s;
 }
 
-.social-icons a:hover{
-color:white;
-transform:scale(1.2);
-}
+.social-icons a:hover{color:white;transform:scale(1.2);}
 
-/* FOOTER */
 footer{
 margin-top:60px;
 text-align:center;
@@ -316,352 +233,120 @@ padding:35px;
 border-top:1px solid #1e293b;
 color:#94a3b8;
 }
-
-/* MOBILE */
-@media(max-width:768px){
-
-.hero h1{
-font-size:40px;
-}
-
-.book-image img{
-height:420px;
-}
-
-}
-
-/* PROTECTION */
-#protectedMsg{
-position:fixed;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
-background:red;
-color:white;
-padding:10px 18px;
-border-radius:8px;
-font-weight:bold;
-display:none;
-z-index:99999;
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
-
 <a href="https://www.asabajumah.top">Home</a>
-
 <a href="https://www.asabajumah.top/about.html">About</a>
-
 <a href="https://www.asabajumah.top/books.html">Books</a>
-
 <a href="https://www.asabajumah.top/contact.html">Contact</a>
-
 </div>
 
-<!-- HERO -->
 <div class="hero">
-
 <h1>Books</h1>
-
 <p>Official books written by Asaba Jumah</p>
-
 </div>
 
-<!-- BOOKS -->
 <div class="container">
-
 <div class="books-grid">
 
 <!-- BOOK 1 -->
 <div class="book-card">
-
 <div class="book-image">
-
-<img src="https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png"
-alt="The Whispers of Kalenga Forest">
-
+<img src="https://www.asabajumah.top/books/img/the-whispers-of-kalenga-forest.png">
 </div>
-
 <div class="book-content">
-
 <h2>The Whispers of Kalenga Forest</h2>
-
-<p>
-A mysterious and emotional adventure story filled with suspense,
-hidden secrets and unforgettable moments deep inside Kalenga Forest.
-</p>
-
-<div class="meta">
-
-<span>📖 Novel</span>
-
-<span>🌍 Official Release</span>
-
-<span>📅 23 May 2026</span>
-
+<p>Mystery adventure deep inside Kalenga Forest.</p>
+<div class="meta"><span>📖 Novel</span><span>📅 2026</span></div>
+<a class="btn" href="https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html">Open Book</a>
 </div>
-
-<a class="btn"
-href="https://www.asabajumah.top/books/the-whispers-of-kalenga-forest.html">
-
-Open Book
-
-</a>
-
-</div>
-
 </div>
 
 <!-- BOOK 2 -->
 <div class="book-card">
-
 <div class="book-image">
-
-<img src="https://www.asabajumah.top/books/img/the-last-night-of-nambale.png"
-alt="The Last Night of Nambale">
-
+<img src="https://www.asabajumah.top/books/img/the-last-night-of-nambale.png">
 </div>
-
 <div class="book-content">
-
 <h2>The Last Night of Nambale</h2>
-
-<p>
-An intense story of mystery, darkness and survival set during
-the final unforgettable night in Nambale.
-</p>
-
-<div class="meta">
-
-<span>📖 Thriller</span>
-
-<span>🌍 Official Release</span>
-
-<span>📅 10 May 2026</span>
-
+<p>Dark mystery survival story.</p>
+<div class="meta"><span>📖 Thriller</span><span>📅 2026</span></div>
+<a class="btn" href="https://www.asabajumah.top/books/the-last-light-of-nambale.html">Open Book</a>
 </div>
-
-<a class="btn"
-href="https://www.asabajumah.top/books/the-last-light-of-nambale.html">
-
-Open Book
-
-</a>
-
-</div>
-
 </div>
 
 <!-- BOOK 3 -->
 <div class="book-card">
-
 <div class="book-image">
-
-<img src="https://www.asabajumah.top/books/img/the-smiling-man-in-room-13.png"
-alt="The Smiling Man in Room 13">
-
+<img src="https://www.asabajumah.top/books/img/the-smiling-man-in-room-13.png">
 </div>
-
 <div class="book-content">
-
 <h2>The Smiling Man in Room 13</h2>
-
-<p>
-A terrifying horror mystery set inside an old boarding school
-where strange footsteps, dark secrets and a smiling figure
-haunt Room 13 after midnight.
-</p>
-
-<div class="meta">
-
-<span>👻 Horror</span>
-
-<span>🌍 Official Release</span>
-
-<span>📅 24 May 2026</span>
-
+<p>Horror mystery in a haunted school.</p>
+<div class="meta"><span>👻 Horror</span><span>📅 2026</span></div>
+<a class="btn" href="https://www.asabajumah.top/books/the-smiling-man-in-room-13.html">Open Book</a>
 </div>
-
-<a class="btn"
-href="https://www.asabajumah.top/books/the-smiling-man-in-room-13.html">
-
-Open Book
-
-</a>
-
-</div>
-
 </div>
 
 <!-- BOOK 4 -->
 <div class="book-card">
-
 <div class="book-image">
-
-<img src="https://www.asabajumah.top/books/img/i-am-asaba-jumah.png"
-alt="I Am Asaba Jumah">
-
+<img src="https://www.asabajumah.top/books/img/i-am-asaba-jumah.png">
 </div>
-
 <div class="book-content">
-
 <h2>I Am Asaba Jumah</h2>
-
-<p>
-An inspiring autobiographical journey into the life of
-Ugandan artist, actor, and creative storyteller Asaba Jumah,
-exploring music, acting, ambition, and creativity.
-</p>
-
-<div class="meta">
-
-<span>🎬 Biography</span>
-
-<span>🎵 Music</span>
-
-<span>📅 24 May 2026</span>
-
+<p>Biography and creative journey.</p>
+<div class="meta"><span>🎬 Biography</span><span>📅 2026</span></div>
+<a class="btn" href="https://www.asabajumah.top/books/i-am-asaba-jumah.html">Open Book</a>
 </div>
-
-<a class="btn"
-href="https://www.asabajumah.top/books/i-am-asaba-jumah.html">
-
-Open Book
-
-</a>
-
-</div>
-
 </div>
 
 <!-- BOOK 5 -->
 <div class="book-card">
-
 <div class="book-image">
-
-<img src="https://www.asabajumah.top/books/img/the-house-beneath-black-hill.png"
-alt="The House Beneath Black Hill">
-
+<img src="https://www.asabajumah.top/books/img/the-house-beneath-black-hill.png">
 </div>
-
 <div class="book-content">
-
 <h2>The House Beneath Black Hill</h2>
-
-<p>
-A chilling supernatural horror novel about a terrifying mansion
-hidden inside Black Hill Forest where whispers, disappearances,
-dark rituals and an ancient evil haunt everyone who enters.
-</p>
-
-<div class="meta">
-
-<span>👻 Horror</span>
-
-<span>🔥 Supernatural Thriller</span>
-
-<span>📅 26 May 2026</span>
-
+<p>Supernatural horror story.</p>
+<div class="meta"><span>👻 Horror</span><span>📅 2026</span></div>
+<a class="btn" href="https://www.asabajumah.top/books/the-house-beneath-black-hill.html">Open Book</a>
+</div>
 </div>
 
-<a class="btn"
-href="https://www.asabajumah.top/books/the-house-beneath-black-hill.html">
-
-Open Book
-
-</a>
-
+<!-- BOOK 6 (NEW) -->
+<div class="book-card">
+<div class="book-image">
+<img src="https://www.asabajumah.top/books/img/whispers-of-the-heart.png">
+</div>
+<div class="book-content">
+<h2>Whispers of the Heart</h2>
+<p>Emotional story of love, destiny and human connection.</p>
+<div class="meta"><span>❤️ Romance</span><span>📅 2026</span><span>📖 Novel</span></div>
+<a class="btn" href="https://www.asabajumah.top/books/whispers-of-the-heart.html">Open Book</a>
+</div>
 </div>
 
 </div>
-
 </div>
 
-<!-- SOCIAL -->
 <div class="social">
-
 <h2>Official Profiles</h2>
-
 <div class="social-icons">
-
-<a href="https://www.facebook.com/djfelixpro">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="https://x.com/asabajumah">
-<i class="fab fa-x-twitter"></i>
-</a>
-
-<a href="https://www.instagram.com/djfelixpro">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.tiktok.com/@asabajumah">
-<i class="fab fa-tiktok"></i>
-</a>
-
-<a href="https://www.youtube.com/@asabajumah">
-<i class="fab fa-youtube"></i>
-</a>
-
-<a href="https://www.imdb.com/name/nm18243050/">
-<i class="fab fa-imdb"></i>
-</a>
-
-<a href="https://www.themoviedb.org/person/6077619-asaba-jumah">
-<i class="fas fa-film"></i>
-</a>
-
-<a href="https://open.spotify.com/artist/4rneWabSFmcWDEKKsDN2mY">
-<i class="fab fa-spotify"></i>
-</a>
-
+<a href="https://x.com/asabajumah"><i class="fab fa-x-twitter"></i></a>
+<a href="https://www.instagram.com/djfelixpro"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@asabajumah"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.youtube.com/@asabajumah"><i class="fab fa-youtube"></i></a>
+</div>
 </div>
 
-</div>
-
-</div>
-
-<!-- FOOTER -->
 <footer>
-
 © 2026 Asaba Jumah. All rights reserved.
-
 </footer>
-
-<!-- PROTECTION -->
-<div id="protectedMsg">Protected 🔒</div>
-
-<script>
-
-function showProtected(){
-
-let msg=document.getElementById("protectedMsg");
-
-msg.style.display="block";
-
-setTimeout(()=>{
-msg.style.display="none";
-},1500);
-
-}
-
-document.addEventListener("copy",function(e){
-e.preventDefault();
-showProtected();
-});
-
-document.addEventListener("contextmenu",function(e){
-e.preventDefault();
-showProtected();
-});
-
-</script>
 
 </body>
 </html>
