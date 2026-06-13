@@ -132,15 +132,71 @@ footer{text-align:center;padding:35px;color:#94a3b8;border-top:1px solid #1e293b
 <a class="btn btn-amazon" href="https://www.amazon.com/Whispers-Heart-Asaba-Jumah-ebook/dp/B0H4VB5T2P/ref=mp_s_a_1_2?dib=eyJ2IjoiMSJ9.oujoYjvzCV_Khk90XrrgPGmAjkTK_7wuqPCBfd3VSU-hpR1HG4TIMlTXJUfmXpvswYUzN783v1rSC1qxkFRAn3JQx4SBzki-_HuxSRtiUyqncRQV4BPJGcq6tHfryGHBoLpTiLZpZKSUKeyjmMGYeerbcQEieuw4N4Xm75zOv1axzNFbosgnguQCudKAVCqp.NyZWtHW17qKfQG2UM1XixGnRPyANxx41pbLoH34pL8s&dib_tag=se&keywords=Asaba+Jumah&qid=1781306828&sr=8-2" target="_blank">
 <i class="fab fa-amazon"></i> Amazon Kindle
 </a>
-
 </div>
 </div>
 </div>
 </section>
 
+<section class="about-book">
+<div class="about-box">
+<h2>About The Book</h2>
+<p>Emma Nankya had long ago stopped believing in fairy-tale romance. Focused on her career and determined to protect her heart from disappointment, she never expected a simple walk through a city garden to change her life forever.</p>
+</div>
+</section>
+
+<section class="book-reviews">
+<h2>Book Reviews</h2>
+<div class="rating-summary">
+<span>⭐ 4.8/5</span>
+<span>Based on 4,982 ratings</span>
+</div>
+
+<div class="review">
+<p class="review-text">"A captivating story full of mystery, suspense, and emotion."</p>
+<p class="review-author">– Daniel K.</p>
+<p class="review-rating">⭐⭐⭐⭐⭐</p>
+</div>
+
+<div class="review">
+<p class="review-text">"The atmosphere of Kalenga Forest feels real and unforgettable."</p>
+<p class="review-author">– Grace M.</p>
+<p class="review-rating">⭐⭐⭐⭐⭐</p>
+</div>
+
+<div class="review">
+<p class="review-text">"An excellent blend of adventure, mystery and storytelling."</p>
+<p class="review-author">– Brian T.</p>
+<p class="review-rating">⭐⭐⭐⭐☆</p>
+</div>
+</section>
+
 <footer>
 <p>© 2026 Asaba Jumah. All rights reserved.</p>
+<div class="footer-links">
+<a href="https://www.facebook.com/djfelixpro"><i class="fab fa-facebook"></i></a>
+<a href="https://x.com/asabajumah"><i class="fab fa-x-twitter"></i></a>
+<a href="https://www.instagram.com/djfelixpro"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@asabajumah"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.youtube.com/@asabajumah"><i class="fab fa-youtube"></i></a>
+<a href="https://www.imdb.com/name/nm18243050/"><i class="fab fa-imdb"></i></a>
+<a href="https://www.themoviedb.org/person/6077619-asaba-jumah"><i class="fas fa-film"></i></a>
+<a href="https://open.spotify.com/artist/4rneWabSFmcWDEKKsDN2mY"><i class="fab fa-spotify"></i></a>
+<a href="https://tidal.com/artist/77292471"><i class="fas fa-music"></i></a>
+<a href="https://music.amazon.com/artists/B0GW8CSKRR/asaba-jumah"><i class="fab fa-amazon"></i></a>
+<a href="https://www.deezer.com/us/artist/383696591"><i class="fas fa-compact-disc"></i></a>
+</div>
 </footer>
 
+<div id="protectedMsg">Protected 🔒</div>
+<script>
+function showProtected(){
+  let msg = document.getElementById("protectedMsg");
+  msg.style.display = "block";
+  setTimeout(()=>{ msg.style.display = "none"; },1500);
+}
+document.addEventListener("copy", function(e){ e.preventDefault(); showProtected(); });
+document.addEventListener("contextmenu", function(e){ e.preventDefault(); showProtected(); });
+</script>
 </body>
 </html>
+
